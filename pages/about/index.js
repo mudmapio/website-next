@@ -1,3 +1,5 @@
+import Layout from "../../components/layout/Layout";
+
 export default function FirstPost() {
   return (
     <>
@@ -5,3 +7,5 @@ export default function FirstPost() {
     </>
   )
 }
+
+FirstPost.Layout = Layout

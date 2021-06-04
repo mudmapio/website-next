@@ -14,9 +14,8 @@ export default function Pricing() {
         <div className="pb-16 xl:flex xl:items-center xl:justify-between">
           <div>
             <h1 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
-              <span className="text-gray-900">Connect your devices for just </span>
+              <span className="text-gray-900">Connected devices cost just </span>
               <span className="text-indigo-600">$6 a month </span>
-              per connection
             </h1>
             <p className="mt-5 text-xl text-gray-500">
               Fully hosted - never worry about SSH or VPN tunnels again.
@@ -26,7 +25,7 @@ export default function Pricing() {
             href="/register"
             className="mt-8 w-full bg-indigo-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-md text-white hover:bg-indigo-700 sm:mt-10 sm:w-auto xl:mt-0"
           >
-            Get started today!
+            Get started today
           </a>
         </div>
         <div className="border-t border-gray-200 pt-16 xl:grid xl:grid-cols-3 xl:gap-x-8">
