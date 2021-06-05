@@ -12,7 +12,6 @@ const navigation = [
 export default function Banner() {
   return (
     <div className="min-h-0">
-    {/*<div className="min-h-screen">*/}
       <div className="relative overflow-hidden">
         <Popover as="header" className="relative">
           {({open}) => (
@@ -30,7 +29,7 @@ export default function Banner() {
                         <img
                           className="h-8 w-auto sm:h-10"
                           src="/logo.png"
-                          alt=""
+                          alt="Mudmap logo"
                         />
                       </a>
                       <div className="-mr-2 flex items-center md:hidden">
@@ -54,15 +53,15 @@ export default function Banner() {
                     </div>
                   </div>
                   <div className="hidden md:flex md:items-center md:space-x-6">
-                    <a href="#"
+                    <a href="/login"
                        className="text-base font-medium text-white hover:text-gray-300">
                       Log in
                     </a>
                     <a
-                      href="#"
+                      href="/register"
                       className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
                     >
-                      Start free trial
+                      Register
                     </a>
                   </div>
                 </nav>
@@ -90,8 +89,8 @@ export default function Banner() {
                       <div>
                         <img
                           className="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                          alt=""
+                          src="/logo.png"
+                          alt="Mudmap logo"
                         />
                       </div>
                       <div className="-mr-2">
