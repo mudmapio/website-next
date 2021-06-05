@@ -13,7 +13,7 @@ export default function BlogList({posts}) {
                   <time dateTime={post.datetime}><DateFormatter
                     dateString={post.date}/></time>
                 </p>
-                <a href={`/posts/${post.slug}`} className="mt-2 block">
+                <a href={`/blog/${post.slug}`} className="mt-2 block">
                   {/*<p*/}
                   {/*  className="text-xl font-semibold text-gray-900">{post.title}</p>*/}
                   <h2
@@ -27,7 +27,7 @@ export default function BlogList({posts}) {
                     className="mt-3 text-base text-gray-500">{post.excerpt}</p>
                 </a>
                 <div className="mt-3">
-                  <a href={`/posts/${post.slug}`}
+                  <a href={`/blog/${post.slug}`}
                      className="text-base font-semibold text-indigo-600 hover:text-indigo-500">
                     👉 Read More
                   </a>

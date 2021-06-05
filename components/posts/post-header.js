@@ -11,7 +11,7 @@ export default function PostHeader({title, coverImage, date, author}) {
               className="text-left uppercase text-xs text-indigo-600 font-bold hover:underline"
             >
               <Link
-                href="/posts">👈 Return to Blog
+                href="/blog">👈 Return to Blog
               </Link>
             </p>
             <p
