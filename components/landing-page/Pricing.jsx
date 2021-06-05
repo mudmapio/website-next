@@ -1,10 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { CheckIcon } from '@heroicons/react/outline'
+import {CheckIcon} from '@heroicons/react/outline'
 
 const features = [
   'Only pay for what you use.',
   'Full API access to the your devices.',
-    'other stuff :)',
+  'One dashboard to rule them all',
+  'No lock-in - pay per month',
+  'Add and remove devices at anytime'
 ]
 
 export default function Pricing() {
@@ -15,10 +17,11 @@ export default function Pricing() {
           <div>
             <h1 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
               <span className="text-gray-900">Connected devices cost just </span>
-              <span className="text-indigo-600">$6 a month </span>
+              <span className="text-indigo-600">$6 a month each</span>
             </h1>
             <p className="mt-5 text-xl text-gray-500">
-              Fully hosted - never worry about SSH or VPN tunnels again.
+              Pricing is calculated in a <i>per-seat</i> arrangement. You'll only
+              pay for firewalls which are active on the platform.
             </p>
           </div>
           <a
