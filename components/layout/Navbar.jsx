@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const navigation = [
   {name: 'About', href: '/about', current: false},
-  {name: 'Pricing', href: '/pricing', current: false},
+  {name: 'Pricing', href: '/#pricing', current: false},
   {name: 'Docs', href: '/docs', current: false},
 ]
 const userActions = [
@@ -43,17 +43,19 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
                     <img
-                      className="block lg:hidden h-8 w-auto"
+                      className="block lg:hidden h-8 w-auto focus hover:opacity-40 "
                       src="/logo.png"
                       alt="Workflow"
+                      title="Home"
                     />
                   </Link>
                   <Link href="/">
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/logo.png"
-                    alt="Workflow"
-                  />
+                    <img
+                      className="hidden lg:block h-8 w-auto focus hover:opacity-40"
+                      src="/logo.png"
+                      alt="Workflow"
+                      title="Home"
+                    />
                   </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">

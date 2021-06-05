@@ -5,13 +5,14 @@ import {ChevronRightIcon} from '@heroicons/react/solid'
 
 const navigation = [
   {name: 'About', href: '/about', current: false},
-  {name: 'Pricing', href: '/pricing', current: false},
+  {name: 'Pricing', href: '#pricing', current: false},
   {name: 'Docs', href: '/docs', current: false},
 ]
 
 export default function Banner() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-0">
+    {/*<div className="min-h-screen">*/}
       <div className="relative overflow-hidden">
         <Popover as="header" className="relative">
           {({open}) => (
@@ -148,7 +149,8 @@ export default function Banner() {
                   className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
                   <div className="lg:py-24">
                     <a
-                      href="/blog"
+                      // href="/blog"
+                      href="/posts"
                       className="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                     >
                       <span
