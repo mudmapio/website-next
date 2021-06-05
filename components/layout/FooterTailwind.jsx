@@ -3,9 +3,9 @@ const getCurrentYear = () => {
 
 const navigation = {
   solutions: [
-    {name: 'For Managed Service Providers', href: '#'},
-    {name: 'Service Multiple Firewalls', href: '#'},
-    {name: 'Reduce Staff Workloads', href: '#'},
+    {name: 'For Managed Service Providers', href: '/solutions/for-msps'},
+    {name: 'Service Multiple Firewalls', href: '/solutions/multiple-firewalls'},
+    {name: 'Reduce Staff Workloads', href: '/solutions/reduce-workloads'},
   ],
   support: [
     {name: 'Contact', href: '/contact'},
@@ -19,7 +19,7 @@ const navigation = {
   legal: [
     // { name: 'Claim', href: '#' },
     // { name: 'Privacy', href: '#' },
-    {name: 'Terms of Service', href: '/terms'},
+    {name: 'Terms of Service', href: '/legal/terms'},
   ],
   social: [
     {
