@@ -1,5 +1,3 @@
-import {ChevronDownIcon} from '@heroicons/react/solid'
-
 export default function Panels() {
   return (
 
@@ -22,29 +20,24 @@ export default function Panels() {
         </div>
         <div className="w-full max-w-xs">
           <img
-            // className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-            className="mt-4 object-contain object-center h-full w-full object-cover rounded-xl"
-            // src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
-            // src="/service-3.png"
-            src="/panel-1.jpg"
+            className="relative mx-auto"
+            src="/assets/landing-page/management.svg"
             alt="Inbox user interface"
           />
         </div>
       </div>
-
-
       {/*// panel 2 - light*/}
-
       <div className="bg-white">
         <div
           className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
-
           <div className="mt-10 w-full max-w-xs">
+            <img
+              className="relative mx-auto"
+              src="/assets/landing-page/distributed.svg"
+              alt="Inbox user interface"
+            />
           </div>
-
-
           <div className="max-w-xl">
-
             <h2
               className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
               Replace all those mouse clicks with an API-driven approach.
@@ -56,12 +49,9 @@ export default function Panels() {
               one platform to view, update or delete records on your devices.
             </p>
           </div>
-
         </div>
       </div>
-
       {/*// panel 3 - dark*/}
-
       <div className="bg-gray-800">
         <div
           className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
@@ -81,30 +71,25 @@ export default function Panels() {
             </p>
           </div>
           <div className="mt-10 w-full max-w-xs">
-
+            <img
+              className="relative mx-auto"
+              src="/assets/landing-page/security.svg"
+              alt="Inbox user interface"
+            />
           </div>
         </div>
-
         {/*// panel 4 - light*/}
-
-
         <div className="bg-white">
           <div
             className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
-
             <div className="mt-10 w-full max-w-xs">
-              {/*<Image*/}
-              {/*  src="/service-3.png"*/}
-              {/*  alt="Picture of charts"*/}
-              {/*  layout="responsive"*/}
-              {/*  width={500}*/}
-              {/*  height={500}*/}
-              {/*  />*/}
+              <img
+                className="relative mx-auto"
+                src="/assets/landing-page/global.svg"
+                alt="Inbox user interface"
+              />
             </div>
-
-
             <div className="max-w-xl">
-
               <h2
                 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
                 Built by an engineer for engineers
@@ -120,12 +105,9 @@ export default function Panels() {
                 automated reply with 14 days SLA turnaround!
               </p>
             </div>
-
           </div>
         </div>
       </div>
-
-
     </div>
   )
 }

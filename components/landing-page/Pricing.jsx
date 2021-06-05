@@ -17,7 +17,7 @@ export default function Pricing() {
           <div>
             <h1 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
               <span className="text-gray-900">Connected devices cost just </span>
-              <span className="text-indigo-600">$6 a month each</span>
+              <span className="text-indigo-600">$6 a month</span>
             </h1>
             <p className="mt-5 text-xl text-gray-500">
               Pricing is calculated in a <i>per-seat</i> arrangement. You'll only
