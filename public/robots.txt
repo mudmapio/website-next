@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mudmap.io
+
+# Sitemaps
+Sitemap: https://mudmap.io/sitemap.xml
