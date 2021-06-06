@@ -1,10 +1,14 @@
 const getCurrentYear = () => {
-    return new Date().getFullYear();  };
+  return new Date().getFullYear();
+};
 
 const navigation = {
   solutions: [
     {name: 'For Managed Service Providers', href: '/solutions/for-msps'},
-    {name: 'Service Multiple Firewalls', href: '/solutions/multiple-firewalls'},
+    {
+      name: 'Service Multiple Firewalls',
+      href: '/solutions/multiple-firewalls'
+    },
     {name: 'Reduce Staff Workloads', href: '/solutions/reduce-workloads'},
   ],
   support: [
@@ -12,9 +16,10 @@ const navigation = {
     {name: 'Frequently Asked Questions', href: '/faq'},
   ],
   company: [
-   {name: 'About', href: '/about'},
+    {name: 'About', href: '/about'},
     {name: 'Pricing', href: '/#pricing'},
     {name: 'Documentation', href: '/docs'},
+    {name: 'Blog', href: "/blog"},
   ],
   legal: [
     // { name: 'Claim', href: '#' },
@@ -27,7 +32,8 @@ const navigation = {
       href: 'https://twitter.com/dansult',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          <path
+            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
         </svg>
       ),
     },
@@ -58,11 +64,13 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                <h3
+                  className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
                 <ul className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                      <a href={item.href}
+                         className="text-base text-gray-300 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -70,11 +78,13 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                <h3
+                  className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
                 <ul className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                      <a href={item.href}
+                         className="text-base text-gray-300 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -84,11 +94,13 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                <h3
+                  className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
                 <ul className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                      <a href={item.href}
+                         className="text-base text-gray-300 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -96,11 +108,13 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                <h3
+                  className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
                 <ul className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                      <a href={item.href}
+                         className="text-base text-gray-300 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -110,42 +124,43 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            <h3
+              className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
             <p className="mt-4 text-base text-gray-300">
-              The latest news, articles, and resources, sent to your inbox weekly.
+              The latest news, articles, and resources, sent to your inbox
+              weekly.
             </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
-              <label htmlFor="emailAddress" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="emailAddress"
-                id="emailAddress"
-                autoComplete="email"
-                required
-                className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
-                placeholder="Enter your email"
+            <form
+              action="https://buttondown.email/api/emails/embed-subscribe/dansult"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://buttondown.email/dansult', 'popupwindow')"
+              className="mt-4 sm:flex sm:max-w-md"
+            >
+              <input type="email" name="email" id="bd-email"
+                     className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
               />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full bg-indigo-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
-                >
-                  Subscribe
-                </button>
+              <input type="hidden" value="1" name="embed"/>
+              <div
+                className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                <input type="submit" value="Subscribe"
+                       className="w-full bg-indigo-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                />
               </div>
             </form>
+
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <div
+          className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
+              <a key={item.name} href={item.href}
+                 className="text-gray-400 hover:text-gray-300">
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <item.icon className="h-6 w-6" aria-hidden="true"/>
               </a>
             ))}
           </div>

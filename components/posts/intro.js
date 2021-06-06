@@ -20,25 +20,30 @@ export default function Intro() {
           </div>
           <div className="text-center mt-8">
             <form
+              action="https://buttondown.email/api/emails/embed-subscribe/dansult"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://buttondown.email/dansult', 'popupwindow')"
               className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-center">
               <div>
-                <label htmlFor="email-address" className="sr-only">
+                <label htmlFor="email" className="sr-only">
                   Email address
                 </label>
                 <input
-                  id="email-address"
-                  name="email-address"
+                  id="bd-email"
+                  name="email"
                   type="email"
                   autoComplete="email"
                   required
                   className="appearance-none w-full px-4 py-2 border border-gray-300 text-base rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 lg:max-w-xs"
                   placeholder="Enter your email"
                 />
+                <input type="hidden" value="1" name="embed"/>
               </div>
               <div
                 className="mt-2 flex-shrink-0 w-full flex rounded-md shadow-sm sm:mt-0 sm:ml-3 sm:w-auto sm:inline-flex">
                 <button
-                  type="button"
+                  type="submit"
                   className="w-full bg-indigo-600 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto sm:inline-flex"
                 >
                   Subscribe
