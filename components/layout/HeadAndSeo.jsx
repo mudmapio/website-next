@@ -15,7 +15,7 @@ export default function HeadAndSeo() {
         canonical="https://mudmap.io/"
         openGraph={{
           url: 'https://mudmap.io/',
-          title: 'Mudmap',
+          title: 'Mudmap | pfSense Central Management',
           description: 'Cloud management and configuration for pfSense firewalls. Secure, safe and easy to configure and use. Take the hassle out of multisite firewall maintenance.',
           images: [
             {
@@ -24,16 +24,13 @@ export default function HeadAndSeo() {
               height: 600,
               alt: "Mudmap OpenGraph Card Image"
             }
-          ]
-
-        }
-        }
-        twitter=
-          {{
+          ],
+          site_name: "mudmap.io"
+        }}
+        twitter={{
             handle: '@dansult',
-            site: '@dansult',
+            site: 'mudmap.io',
             cardType: 'summary_large_image',
-            image: 'https://mudmap.io/mudmap-card.png'
           }}
       />
     </>
