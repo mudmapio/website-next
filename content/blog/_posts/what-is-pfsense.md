@@ -1,7 +1,7 @@
 ---
 title: 'What is pfSense?'
 excerpt: 'pfSense® is a free open source firewall and router software distribution based upon FreeBSD. Simple, powerful, and packed with high-end features.'
-coverImage: '/assets/blog/what-is-pfsense/post-1.jpg'
+coverImage: '/assets/blog/what-is-pfsense/firewall.jpeg'
 date: '2021-04-07'
 author:
   name: Dan
