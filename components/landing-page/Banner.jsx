@@ -2,6 +2,7 @@ import {Fragment} from 'react'
 import {Popover, Transition} from '@headlessui/react'
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import {ChevronRightIcon} from '@heroicons/react/solid'
+import {PopupButton} from "react-calendly";
 
 const navigation = [
   {name: 'About', href: '/about', current: false},
@@ -10,6 +11,7 @@ const navigation = [
 ]
 
 export default function Banner() {
+
   return (
     <div className="min-h-0">
       <div className="relative overflow-hidden">
@@ -182,12 +184,9 @@ export default function Banner() {
                         </a>
                       </div>
                       <div className="mt-3 sm:mt-0 sm:ml-3">
-                        <a
-                          href="/contact"
-                          className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                        >
-                          Book a demo
-                        </a>
+                        <PopupButton url="https://calendly.com/dansult" text="Book a demo"
+                                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                        />
                       </div>
                     </div>
 
