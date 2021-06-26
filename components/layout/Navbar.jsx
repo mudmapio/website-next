@@ -7,6 +7,7 @@ const navigation = [
   {name: 'About', href: '/about', current: false},
   {name: 'Pricing', href: '/#pricing', current: false},
   {name: 'Docs', href: '/docs', current: false},
+  {name: 'Contact', href: '/contact', current: false},
 ]
 const userActions = [
   {name: 'Login', href: '/login', current: false},
