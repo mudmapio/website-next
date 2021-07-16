@@ -10,7 +10,7 @@ export default function HeadAndSeo() {
           devices in the cloud.</title>
       </Head>
       <NextSeo
-        title="Mudmap"
+        title="Mudmap | pfSense Central Management in the cloud"
         description="Cloud management and configuration for pfSense firewalls. Secure, safe and easy to configure and use. Take the hassle out of multisite firewall maintenance."
         canonical="https://mudmap.io/"
         openGraph={{
