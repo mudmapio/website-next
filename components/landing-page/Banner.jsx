@@ -3,6 +3,7 @@ import {Popover, Transition} from '@headlessui/react'
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import {ChevronRightIcon} from '@heroicons/react/solid'
 import {PopupButton} from "react-calendly";
+import NewFeaturesBanner from "./NewFeaturesBanner";
 
 const navigation = [
   {name: 'About', href: '/about', current: false},
@@ -15,6 +16,7 @@ export default function Banner() {
 
   return (
     <div className="min-h-0">
+      <NewFeaturesBanner />
       <div className="relative overflow-hidden">
         <Popover as="header" className="relative">
           {({open}) => (
