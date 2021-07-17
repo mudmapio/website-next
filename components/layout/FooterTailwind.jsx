@@ -14,6 +14,7 @@ const navigation = {
   support: [
     {name: 'Contact', href: '/contact'},
     {name: 'Frequently Asked Questions', href: '/faq'},
+    {name: 'Roadmap', href: '/roadmap'},
   ],
   company: [
     {name: 'About', href: '/about'},
@@ -140,6 +141,7 @@ export default function Footer() {
               className="mt-4 sm:flex sm:max-w-md"
             >
               <input type="email" name="email" id="bd-email"
+                     placeholder="Enter your email"
                      className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
               />
               <input type="hidden" value="1" name="embed"/>

@@ -22,6 +22,9 @@ export default function Pricing() {
             <p className="mt-5 text-xl text-gray-500">
               Pricing is calculated in a <i>per-seat</i> arrangement. You'll only
               pay for firewalls which are active on the platform.
+              </p>
+              <p className="mt-1 text-xl text-gray-500">
+              Pricing is in USD but is calculated using your local currency at checkout.
             </p>
           </div>
           <a
