@@ -1,4 +1,40 @@
+import {useButtondown} from "react-buttondown";
+import {toast} from "react-toastify";
+import {useForm} from "react-hook-form";
+
 export default function Intro() {
+
+  // buttondown.email setup
+  const API_KEY = process.env.BUTTONDOWN_API_KEY;
+  const { addSubscriber } = useButtondown(`${API_KEY}`)
+  const handleAddSubscriber = async (email) => {
+    try {
+      const response = await addSubscriber(email)
+      const subscriber = response.data
+      toast.success(`Subscription Success 🤙. Check your email to confirm.`)
+    } catch (err) {
+      const errorMessage = err.data
+      toast.error(`😭 Subscription failed: ${errorMessage}`)
+    }
+  }
+  const handleEmailSubscription = (data) => {
+    handleAddSubscriber(data.email)
+  }
+
+  const handleError = (errors) => {
+    console.log(errors)
+  };
+  const {register, handleSubmit, formState: { errors }} = useForm({
+    mode: "onBlur"
+  });
+
+
+  const subscribeOptions = {
+    email: {
+      required: "Must enter a valid email address",
+    }
+  }
+
   return (
 
     <section>
@@ -20,10 +56,8 @@ export default function Intro() {
           </div>
           <div className="text-center mt-8">
             <form
-              action="https://buttondown.email/api/emails/embed-subscribe/dansult"
               method="post"
-              target="popupwindow"
-              onsubmit="window.open('https://buttondown.email/dansult', 'popupwindow')"
+              onSubmit={handleSubmit(handleEmailSubscription, handleError)}
               className="mt-6 flex flex-col sm:flex-row lg:mt-0 lg:justify-center">
               <div>
                 <label htmlFor="email" className="sr-only">
@@ -37,8 +71,9 @@ export default function Intro() {
                   required
                   className="appearance-none w-full px-4 py-2 border border-gray-300 text-base rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 lg:max-w-xs"
                   placeholder="Enter your email"
+                  {...register('email', subscribeOptions.email)}
                 />
-                <input type="hidden" value="1" name="embed"/>
+                {errors.email && <p className="text-red-400 pt-1">{errors.email.message}</p>}
               </div>
               <div
                 className="mt-2 flex-shrink-0 w-full flex rounded-md shadow-sm sm:mt-0 sm:ml-3 sm:w-auto sm:inline-flex">
