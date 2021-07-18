@@ -1,3 +1,7 @@
+import {useButtondown} from "react-buttondown";
+import {useForm} from "react-hook-form";
+import {toast} from "react-toastify";
+
 const getCurrentYear = () => {
   return new Date().getFullYear();
 };
@@ -55,6 +59,38 @@ const navigation = {
 }
 
 export default function Footer() {
+
+  // buttondown.email setup
+  const API_KEY = process.env.BUTTONDOWN_API_KEY;
+  const { addSubscriber } = useButtondown(`${API_KEY}`)
+  const handleAddSubscriber = async (email) => {
+    try {
+      const response = await addSubscriber(email)
+      const subscriber = response.data
+      toast.success(`Subscription Success 🤙. Check your email to confirm.`)
+    } catch (err) {
+      const errorMessage = err.data
+      toast.error(`😭 Subscription failed: ${errorMessage}`)
+    }
+  }
+  const handleEmailSubscription = (data) => {
+    handleAddSubscriber(data.email)
+  }
+
+  const handleError = (errors) => {
+    console.log(errors)
+  };
+  const {register, handleSubmit, formState: { errors }} = useForm({
+    mode: "onBlur"
+  });
+
+
+  const subscribeOptions = {
+    email: {
+      required: "Must enter a valid email address",
+    }
+  }
+
   return (
     <footer className="bg-gray-800" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
@@ -134,17 +170,18 @@ export default function Footer() {
               weekly.
             </p>
             <form
-              action="https://buttondown.email/api/emails/embed-subscribe/dansult"
               method="post"
-              target="popupwindow"
-              onsubmit="window.open('https://buttondown.email/dansult', 'popupwindow')"
+              onSubmit={handleSubmit(handleEmailSubscription, handleError)}
               className="mt-4 sm:flex sm:max-w-md"
             >
-              <input type="email" name="email" id="bd-email"
+              <input type="email"
+                     name="email"
+                     id="bd-email"
                      placeholder="Enter your email"
                      className="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
+                     {...register('email', subscribeOptions.email)}
               />
-              <input type="hidden" value="1" name="embed"/>
+              {errors.email && <p className="text-red-400 pt-1">{errors.email.message}</p>}
               <div
                 className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <input type="submit" value="Subscribe"
@@ -152,7 +189,6 @@ export default function Footer() {
                 />
               </div>
             </form>
-
           </div>
         </div>
         <div

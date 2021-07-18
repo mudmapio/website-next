@@ -6,6 +6,9 @@ module.exports = withMDX({
   future: {
     webpack5: true,
   },
+  env: {
+    BUTTONDOWN_API_KEY: process.env.BUTTONDOWN_API_KEY
+  },
   pageExtensions: ['mdx', 'jsx', 'js', 'ts', 'tsx'],
   async redirects() {
     return [
