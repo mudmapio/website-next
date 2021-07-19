@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://mudmap.io</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/legal/terms</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/marketing/newsletter-success</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/solutions/for-msps</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/solutions/multiple-firewalls</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/solutions/reduce-workloads</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/blog/mudmap-pfsense-central-management-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
-<url><loc>https://mudmap.io/blog/what-is-pfsense</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-06-06T01:21:28.772Z</lastmod></url>
+<url><loc>https://mudmap.io</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.865Z</lastmod></url>
+<url><loc>https://mudmap.io/500</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/blog</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/legal/terms</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/marketing/newsletter-success</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/solutions/for-msps</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/solutions/multiple-firewalls</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/solutions/reduce-workloads</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/blog/free-tier-released</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/blog/mudmap-pfsense-central-management-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/blog/static-ip-now-available</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
+<url><loc>https://mudmap.io/blog/what-is-pfsense</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-07-19T09:58:36.866Z</lastmod></url>
 </urlset>
