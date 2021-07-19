@@ -24,12 +24,12 @@ module.exports = withMDX({
       },
       {
         source: '/faq',
-        destination: 'https://www.notion.so/mudmapio/532a287009714c089b9730c88c64c0e5',
+        destination: 'https://mudmapio.notion.site/532a287009714c089b9730c88c64c0e5',
         permanent: true,
       },
       {
         source: '/roadmap',
-        destination: 'https://www.notion.so/mudmapio/6f7adbb8e3d54159963a6eb44496c326',
+        destination: 'https://mudmapio.notion.site/6f7adbb8e3d54159963a6eb44496c326',
         permanent: true
       }
     ]
