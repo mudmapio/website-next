@@ -168,7 +168,7 @@ export default function Banner() {
                       className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                       <span className="block">A better way to</span>
                       <span
-                        className="block text-indigo-400">manage pfSense firewalls</span>
+                        className="block text-indigo-400">manage pfSense CE firewalls</span>
                     </h1>
                     <p
                       className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">

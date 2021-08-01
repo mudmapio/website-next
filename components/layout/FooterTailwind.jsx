@@ -19,6 +19,7 @@ const navigation = {
     {name: 'Contact', href: '/contact'},
     {name: 'Frequently Asked Questions', href: '/faq'},
     {name: 'Roadmap', href: '/roadmap'},
+    {name: 'Why only pfSense CE', href: '/pfsense-ce'},
   ],
   company: [
     {name: 'About', href: '/about'},
