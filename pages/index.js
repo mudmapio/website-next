@@ -3,7 +3,7 @@ import Panels from "../components/landing-page/PanelList";
 import Pricing from "../components/landing-page/Pricing";
 import Banner from "../components/landing-page/Banner";
 import CTA from "../components/layout/CTA";
-import Footer from "../components/layout/FooterTailwind";
+import Footer from "../components/layout/Footer";
 import HeadAndSeo from "../components/layout/HeadAndSeo";
 
 export default function Home() {

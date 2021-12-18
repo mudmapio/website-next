@@ -1,6 +1,6 @@
 import HeadAndSeo from "./HeadAndSeo";
 import CTA from "./CTA";
-import Footer from "./FooterTailwind";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import {ToastContainer} from "react-toastify";
 
